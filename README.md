@@ -4,8 +4,6 @@ Design a Weather Dashboard app that allows users to search for weather informati
 
 The application has two components: _WeatherList_ and _WeatherCard_, where their respective functionalities will be implemented.
 
-![](https://hrcdn.net/s3_pub/istreet-assets/z83P9E4LBfX_BBu5uqJsiA/weather-dashboard.gif)
-
 _WeatherCard_ component should:
 
 - Display city name, temperature, and weather description.
