@@ -1,0 +1,15 @@
+.app-header {
+  color: #1ba94c;
+  background-color: 39424e;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}

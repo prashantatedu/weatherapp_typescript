@@ -1,0 +1,18 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  flex-direction: column;
+}
+
+.list-header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.page-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
