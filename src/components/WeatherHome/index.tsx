@@ -1,10 +1,11 @@
-import React from "react";
 import WeatherList from "../WeatherList";
 
-export default function WeatherHome() {
+const WeatherHome = () => {
   return (
     <div className="App">
       <WeatherList />
     </div>
   );
-}
+};
+
+export default WeatherHome;

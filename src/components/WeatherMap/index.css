@@ -1,0 +1,42 @@
+.mapcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.weathermap-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.mapstats-container {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 40%;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.mapstats-box {
+  border: 1px solid #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  cursor: grab;
+  flex-grow: 1;
+  padding: 10px;
+  margin-top: 5px;
+  text-align: center;
+}

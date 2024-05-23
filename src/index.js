@@ -5,8 +5,10 @@ import App from "./App";
 import { applyPolyfills, defineCustomElements } from "h8k-components/loader";
 import registerServiceWorker from "./registerServiceWorker";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const queryClient = new QueryClient();
 
 root.render(
   <Auth0Provider
@@ -16,7 +18,9 @@ root.render(
       redirect_uri: window.location.origin,
     }}
   >
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
   </Auth0Provider>
 );
 

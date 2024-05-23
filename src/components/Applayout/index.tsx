@@ -1,12 +1,14 @@
-import Header from "./Header";
+import Header from "../Header";
 import { Outlet } from "react-router-dom";
-import "./Applayout.css";
+import "./index.css";
 
-export default function Applayout() {
+const Applayout = () => {
   return (
     <div className="weather-container">
       <Header />
       <Outlet />
     </div>
   );
-}
+};
+
+export default Applayout;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Weather } from "../../data/weatherData";
-import { waitFor } from "@testing-library/dom";
+// import { waitFor } from "@testing-library/dom";
 
 interface WeatherCardProps {
   weather: Weather;

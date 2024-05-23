@@ -1,9 +1,9 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
-import Login from "./Login";
-import "./Dashboard.css";
+import Login from "../Login";
+import "./index.css";
 
-export default function Dashboard() {
+const Dashboard = () => {
   const { isAuthenticated } = useAuth0();
 
   console.log({ isAuthenticated });
@@ -24,4 +24,6 @@ export default function Dashboard() {
       </div>
     </div>
   );
-}
+};
+
+export default Dashboard;

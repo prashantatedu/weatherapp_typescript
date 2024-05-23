@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import Applayout from "../components/layout/Applayout";
-import Dashboard from "../components/layout/Dashboard";
-import WeatherHome from "../components/layout/WeatherHome";
+import Applayout from "../components/Applayout";
+import Dashboard from "../components/Dashboard";
+import WeatherHome from "../components/WeatherHome";
+import WeatherMap from "../components/WeatherMap";
+import ListCities, { loader as citieLoader } from "../components/ListCities";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ export const router = createBrowserRouter([
       {
         path: "/weather",
         element: <WeatherHome />,
+      },
+      {
+        path: "/mapweather",
+        element: <WeatherMap />,
+      },
+      {
+        path: "/listcities/:stateId",
+        element: <ListCities />,
       },
     ],
   },
