@@ -7,12 +7,11 @@ ENV NODE_ENV production
 # Setting up the work directory
 WORKDIR /app
 
-# Installing dependencies
-COPY ./package.json ./yarn.lock
-RUN npm install
-
 # Copying all the files in our project
 COPY . .
+
+# Installing dependencies
+RUN npm install
 
 # Building our application
 RUN yarn run build
