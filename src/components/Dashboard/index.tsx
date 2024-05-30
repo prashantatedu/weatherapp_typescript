@@ -1,19 +1,19 @@
-import { useAuth0 } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
 import Login from "../Login";
 import "./index.css";
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
-  const { isAuthenticated } = useAuth0();
+  const [isAuthenticated] = useState(true);
 
   console.log({ isAuthenticated });
   const navigate = useNavigate();
 
   console.log(isAuthenticated);
 
-  if (isAuthenticated) {
+  useEffect(() => {
     navigate("/weather");
-  }
+  }, [isAuthenticated, navigate]);
 
   return (
     <div className="weather-home" data-testid="weather-list">
